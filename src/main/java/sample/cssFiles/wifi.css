@@ -1,0 +1,145 @@
+{
+    primary: #3a80cf ;
+
+    color2 : #40514e ;
+
+    color3: #2f89fc;
+
+
+    secondary: white  ;
+
+    exiteRed: rgba(255, 0, 0, 0.7)  ;
+
+    clr :derive(color3,50%);
+    clr2 : derive(color3,20%)
+
+}
+
+
+
+.topmenue{
+    -fx-background-color: derive(black,120%);
+    /*-fx-border-color: color3;*/
+    /*-fx-border-width: 1,0,0,0;*/
+
+}
+
+.x:hover{
+    -fx-background-color: rgba(250,0,0,0.5);
+    -fx-text-fill: white;
+}
+
+.backb {
+    -fx-background-color: derive(color3,80%);
+    -fx-text-fill: white;
+}
+
+.somthing :hover{
+    -fx-background-color: derive(color3,80%);
+
+}
+
+
+.compileBar{
+    -fx-background-color: color2;
+    -fx-border-radius: 20px ;
+}
+
+.infobar{
+    -fx-background-color: primary;
+}
+
+.mainUi{
+    -fx-background-color: white;
+    /*-fx-border-color: primary2;*/
+    -fx-border-width: 3px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 3, 0.0, 0, 1);
+}
+
+.back{
+    -fx-background-color: rgba(0,0,0,0.06);
+}
+
+.downButtons{
+    -fx-background-color: transparent ;
+    -fx-text-fill: color3;
+    -fx-border-color: color3;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-background-radius: 5px;
+}
+
+.downButtons:hover{
+    -fx-background-color: color3 ;
+    -fx-text-fill: white;
+    -fx-border-color: color3;
+}
+
+.radio-button{
+    -fx-text-fill: color2;
+
+}
+
+.smallText{
+    -fx-background-color: rgb(220,220,220);
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+
+.elements:hover{
+
+    -fx-background-color: rgb(249,249,249);
+    /*-fx-border-color: primary2;*/
+    /*-fx-border-width: 3px;*/
+    /*-fx-background-radius: 7px;*/
+    /*-fx-border-radius: 7px;*/
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0.0, 0, 1);*/
+
+}
+
+.fields{
+    -fx-border-color: color3 ;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+
+.radio-button .radio{
+    visibility: false;
+    -fx-fill: color3 ;
+}
+
+.warning{
+    -fx-background-color: #E83B39;
+    -fx-text-fill: white;
+    -fx-background-radius: 1px;
+
+}
+
+.choice-box{
+    -fx-background-color: color3;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.choice-box .open-button .arrow{
+    -fx-fill: white;
+    -fx-background-color: white;
+}
+
+.disctext{
+    /*-fx-background-color: derive(color3,40%);*/
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, clr2, clr);
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+}
+
+.ellipse{
+    -fx-fill: clr2;
+}
+
+
+

@@ -1,0 +1,72 @@
+{
+
+    primary: #3a80cf ;
+
+    /*primary2: */  ;
+
+    secondary: white  ;
+
+    exiteRed: rgba(255, 0, 0, 0.7)  ;
+
+
+
+}
+
+.topLyout {
+    -fx-background-color: white;
+}
+
+.tabs {
+    -fx-background-color: white;
+    /*-fx-border-color: primary2;*/
+    -fx-border-width: 3px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    /*-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);*/
+}
+
+.tabs:hover {
+    -fx-background-color: primary2;
+    /*-fx-border-color: primary2;*/
+    -fx-cursor: hand;
+
+}
+
+.x:hover {
+    -fx-background-color: rgba(255, 0, 0, 0.7);
+    /* -fx-cursor: hand;*/
+}
+
+.TitleText{
+    -fx-text-fill: black;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0px  ;
+    /*-fx-background-color: white;*/
+}
+
+.elements:hover{
+
+    -fx-background-color: rgb(249,249,249);
+    /*-fx-border-color: primary2;*/
+    -fx-border-width: 3px;
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0.0, 0, 1);
+
+}
+
+.smallText{
+    -fx-background-color: rgb(230,230,230);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+.line{
+    -fx-border-color: Blue;
+}
+
+.infobar{
+    -fx-background-color: primary;
+}
+
+
+

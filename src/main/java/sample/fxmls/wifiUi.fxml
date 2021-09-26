@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="975.0" styleClass="back" stylesheets="@../cssFiles/wifi.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.WifiUiController">
+   <bottom>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="975.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="975.0" spacing="20.0" styleClass="compileBar" visible="false">
+               <children>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="561.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="159.0" styleClass="downButtons" text="Compile">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="349.0" layoutY="28.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="159.0" styleClass="downButtons" text="Upload">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets right="29.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="840.0" styleClass="infobar">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="141.0" text="by IOT PLUG" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="561.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="390.0" layoutY="11.0" prefHeight="24.0" prefWidth="186.0" text="www.iotplug.com" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="675.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-16.0" layoutY="-54.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="1442.0" text="WIFI MODULE" textAlignment="CENTER" textFill="#e1e1e1">
+               <font>
+                  <Font name="Arial Black" size="180.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="40.0" layoutY="22.0" prefHeight="46.0" prefWidth="466.0" spacing="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="22.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/wifiBlue.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="368.0" text="WIFI Module Configuration">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" layoutX="41.0" layoutY="74.0" prefHeight="426.0" prefWidth="696.0" styleClass="mainUi" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+               <children>
+                  <AnchorPane fx:id="a1" layoutX="10.0" layoutY="210.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="635.0">
+                     <HBox alignment="CENTER" prefHeight="59.0" prefWidth="635.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <children>
+                           <RadioButton fx:id="clientBox" mnemonicParsing="false" prefHeight="27.0" prefWidth="129.0" text="Client">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </RadioButton>
+                           <Line endX="100.0" startX="99.99989318847656" startY="-29.189849853515625" />
+                           <RadioButton fx:id="hotspotBox" layoutX="205.0" layoutY="52.0" mnemonicParsing="false" text="Hotspot">
+                              <font>
+                                 <Font name="System Bold" size="18.0" />
+                              </font>
+                           </RadioButton>
+                        </children>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                     </HBox>
+                  </AnchorPane>
+                  <AnchorPane fx:id="a2" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="16.0" prefHeight="23.0" prefWidth="153.0" styleClass="smallText" text="Acces point Name" textAlignment="CENTER" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="accesPointField" layoutX="18.0" layoutY="45.0" prefHeight="34.0" prefWidth="201.0" styleClass="fields" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="40.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="a3" layoutX="10.0" layoutY="60.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="16.0" prefHeight="23.0" prefWidth="121.0" styleClass="smallText" text="Password" textAlignment="CENTER" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="passwordField" layoutX="18.0" layoutY="45.0" prefHeight="34.0" prefWidth="201.0" styleClass="fields" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="40.0" />
+
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane fx:id="a4" layoutX="10.0" layoutY="210.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="300.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="16.0" prefHeight="23.0" prefWidth="127.0" styleClass="smallText" text="Node Name" textAlignment="CENTER" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nodeNameField" layoutX="18.0" layoutY="45.0" prefHeight="34.0" prefWidth="201.0" styleClass="fields" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="40.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="warningsLabel" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="509.0" styleClass="warning" text="Somthing went wrong check again " VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="60.0" right="70.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+            <HBox fx:id="a5" alignment="CENTER" prefHeight="75.0" prefWidth="696.0" spacing="20.0" styleClass="mainUi" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="31.0" prefWidth="67.0" text="Port">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="PortList" prefHeight="25.0" prefWidth="110.0" />
+                  <AnchorPane prefHeight="90.0" prefWidth="139.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="loading" fitHeight="44.0" fitWidth="43.0" layoutX="33.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="15.0">
+                           <image>
+                              <Image url="@../resources/Ring-Preloader.gif" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+                  <Button fx:id="compileBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" styleClass="downButtons" text="Compile">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="uploadBtn" layoutX="272.0" layoutY="43.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="130.0" styleClass="downButtons" text="Upload">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="30.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <HBox prefHeight="610.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="610.0" prefWidth="0.0" spacing="70.0">
+               <children>
+                  <AnchorPane prefHeight="14.0" prefWidth="24.0" />
+                  <CubicCurve fx:id="s1" controlX1="-78.38346862792969" controlX2="-77.8099365234375" controlY1="-10.140426635742188" controlY2="-33.1862678527832" endX="-49.30830383300781" endY="-10.095172882080078" fill="DODGERBLUE" startX="-49.30451202392578" startY="-33.186275482177734" stroke="WHITE" styleClass="ellipse">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </CubicCurve>
+                  <CubicCurve fx:id="s2" controlX1="-78.38346862792969" controlX2="-77.8099365234375" controlY1="-10.140426635742188" controlY2="-33.1862678527832" endX="-49.30830383300781" endY="-10.095172882080078" fill="DODGERBLUE" layoutX="91.0" layoutY="154.0" startX="-49.30451202392578" startY="-33.186275482177734" stroke="WHITE" styleClass="ellipse">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </CubicCurve>
+                  <CubicCurve fx:id="s3" controlX1="-78.38346862792969" controlX2="-77.8099365234375" controlY1="-10.140426635742188" controlY2="-33.1862678527832" endX="-49.30830383300781" endY="-10.095172882080078" fill="DODGERBLUE" layoutX="91.0" layoutY="230.0" startX="-49.30451202392578" startY="-33.186275482177734" stroke="WHITE" styleClass="ellipse">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </CubicCurve>
+                  <CubicCurve fx:id="s4" controlX1="-78.38346862792969" controlX2="-77.8099365234375" controlY1="-10.140426635742188" controlY2="-33.1862678527832" endX="-49.30830383300781" endY="-10.095172882080078" fill="DODGERBLUE" layoutX="91.0" layoutY="379.0" startX="-49.30451202392578" startY="-33.186275482177734" stroke="WHITE" styleClass="ellipse">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </CubicCurve>
+                  <AnchorPane layoutX="10.0" layoutY="148.0" prefHeight="7.0" prefWidth="24.0" />
+                  <CubicCurve fx:id="s5" controlX1="-78.38346862792969" controlX2="-77.8099365234375" controlY1="-10.140426635742188" controlY2="-33.1862678527832" endX="-49.30830383300781" endY="-10.095172882080078" fill="DODGERBLUE" layoutX="82.0" layoutY="450.0" startX="-49.30451202392578" startY="-33.186275482177734" stroke="WHITE" styleClass="ellipse" />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="610.0" prefWidth="270.0" spacing="30.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="276.0" />
+                  <Label fx:id="t1" prefHeight="70.0" prefWidth="274.0" styleClass="disctext" text="Choose the type of the target device , The blue color indecate the selected device type" textAlignment="JUSTIFY" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="-2.0" right="15.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="t2" layoutX="10.0" layoutY="80.0" prefHeight="70.0" prefWidth="274.0" styleClass="disctext" text="In case of clinet device write the connected-to device SSID , In case of Hotspot set the name of the access point" textAlignment="JUSTIFY" wrapText="true">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-2.0" right="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="t3" layoutX="10.0" layoutY="170.0" prefHeight="70.0" prefWidth="274.0" styleClass="disctext" text="Set the password to the device you connect to or the device you connect from" textAlignment="JUSTIFY" wrapText="true">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-2.0" right="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="t4" layoutX="10.0" layoutY="240.0" prefHeight="70.0" prefWidth="274.0" styleClass="disctext" text="Node name will be used as a reference to recognize devices in the visualization section" textAlignment="JUSTIFY" wrapText="true">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-2.0" right="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="150.0" />
+                  <Label fx:id="t5" layoutX="10.0" layoutY="310.0" prefHeight="70.0" prefWidth="274.0" styleClass="disctext" text="Choose the device port , Compile and then Upload the configuration" textAlignment="JUSTIFY" wrapText="true">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-2.0" right="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </right>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="975.0" styleClass="topmenue" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="66.0" styleClass="somthing">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="62.0" styleClass="somthing" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="24.0" opacity="0.59" pickOnBounds="true" preserveRatio="true" styleClass="image">
+                           <image>
+                              <Image url="@../leftArrow.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Back">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="863.0" HBox.hgrow="ALWAYS" />
+            <Label alignment="CENTER" onMouseReleased="#close" prefHeight="28.0" prefWidth="50.0" styleClass="x" text="x">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="-3.0" />
+               </HBox.margin>
+            </Label>
+         </children></HBox>
+   </top>
+</BorderPane>
